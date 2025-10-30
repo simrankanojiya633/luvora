@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luvora — Feel the Luxury</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    background: rgba(10,10,10,0.6);
+    z-index: 999;
+  }
+  .navbar a {
+ font-family: 'Cinzel Decorative', cursive;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+font-size:20px;
+    font-weight: 600;
+  }
+  .navbar a:hover {
+ background: linear-gradient(90deg, #2c3e50, #4ca1af);
+
+padding:7px 10px;
+border-radius:6px;
+
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+    background: url('y.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    animation: fadeIn 2s ease;
+  }
+  .hero h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 90px;
+    background: linear-gradient(90deg, #ff80ab, #ffccbc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+  }
+  .hero p {
+  font-family: 'Cinzel Decorative', cursive;
+    font-size: 35px;
+    margin-top: 10px;
+background: linear-gradient(90deg, #f9c5d1, #fcd7b6);
+
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+
+
+  }
+  . HERO A {
+  font-family: 'Cinzel Decorative', cursive;
+    margin-top: 30px;
+    padding: 12px 35px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #2b5876, #4e4376);
+    ;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  . HERO A:hover {
+    background: linear-gradient(135deg, #ff5fa2, #c2185b);
+    transform: scale(1.05);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Section Divider */
+  .divider {
+    height: 2px;
+    width: 60px;
+    background: linear-gradient(90deg, #ff80ab, #ff4081);
+    margin: 50px auto;
+    border-radius: 1px;
+  }
+
+  /* Product Section */
+  .products {
+    padding: 80px 30px;
+    text-align: center;
+    background: #111;
+  }
+  .products h2 {
+    font-size: 2.2em;
+    color: #f5f5f5;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+  }
+  .product-card {
+    background: rgba(30,30,30,0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+  }
+  .product-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  .product-card:hover img {
+    opacity: 1;
+  }
+  .product-info {
+    padding: 18px;
+  }
+  .product-info h4 {
+    color: #fff;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .price {
+    color: #ff5fa2;
+    font-weight: 600;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #0b0b0b;
+    padding: 40px 10px;
+    color: #999;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html">HOME</a>
+  <a href="shop.html">SHOPPING</a>
+  <a href="ABOUT.HTML">ABOUT</a>
+  <a href="CONTACT.HTML">CONTACT</a>
+<a href="cart.html">🛒 CART</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Luvora</h1>
+    <p>Where bold meets beauty✦</p>
+    <a href="shop.html">Shop the Dream</a>
+  </div>
+</section>
+
+<!-- Products -->
+<section class="products">
+  <h2>Crown of pride</h2>
+  <div class="divider"></div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="JA.JPG" alt="Bag">
+      <div class="product-info">
+        <H4>A Traditional Women's aura is poetry woven in culture and calm</h4>
+             </div>
+    </div>
+    <div class="product-card">
+      <img src="OP.JPG" alt="Shoes">
+      <div class="product-info">
+        <h4>she wears her traditionals not as a chains, but as a crown of pride</h4>
+   
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="LY.JPG" alt="Dress">
+      <div class="product-info">
+        <h4>her aura is a dance of devotion,diginity,and divine strength</h4>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Luvora | Dark. Dreamy. Divine.</p>
+</footer>
+
+</body>
+</html>
