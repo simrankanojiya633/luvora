@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luvora | Contact & Book Now</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    background: rgba(10,10,10,0.6);
+    z-index: 999;
+  }
+  .navbar a {
+ font-family: 'Cinzel Decorative', cursive;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+font-size:20px;
+    font-weight: 600;
+  }
+  .navbar a:hover {
+ background: linear-gradient(90deg, #2c3e50, #4ca1af);
+padding:7px 10px;
+border-radius:6px;
+
+  }
+
+
+    /* 🌸 Dreamy animated gradient background */
+    body {
+      background: linear-gradient(135deg, #2a1f2d, #3b1d3a, #5b2b52, #ffb6c1);
+      background-size: 400% 400%;
+      animation: moveGradient 18s ease infinite;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes moveGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(255, 182, 193, 0.08);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #ff9ec7;
+      letter-spacing: 1px;
+      text-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+    }
+
+    header p {
+      color: #ffd6e3;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 25px;
+border:2px solid black;
+      padding: 40px;
+      box-shadow: 0 0 30px rgba(255, 182, 193, 0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      outline: none;
+      font-size: 15px;
+      appearance: none;
+    }
+
+    select option {
+      background: #000;
+      color: #fff;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #bbb;
+    }
+
+    button {
+      background: linear-gradient(90deg, #ff69b4, #ffb6c1);
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      box-shadow: 0 0 20px #ff69b4;
+      transform: scale(1.03);
+    }
+
+    .video-bg {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      opacity: 0.15;
+      object-fit: cover;
+    }
+
+    .glow-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(circle at 20% 20%, rgba(255,182,193,0.15), transparent 70%),
+                  radial-gradient(circle at 80% 80%, rgba(255,105,180,0.15), transparent 70%);
+      z-index: -1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #ffb6c1;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html">HOME</a>
+  <a href="shop.html">SHOPPING</a>
+  <a href="ABOUT.HTML">ABOUT</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="cart.html">🛒 CART</a>
+</div>
+
+  <!-- Soft dreamy video background -->
+  <video autoplay muted loop class="video-bg">
+    <source src="https://videos.pexels.com/video-files/856667/856667-hd_1920_1080_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="glow-overlay"></div>
+
+  <header>
+    <h1>Book Your Dream Look 💗</h1>
+    <p>Fill in your details & let Luvora bring your dream to life.✨❤️❤️❤️✨</p>
+  </header>
+
+  <div class="form-container">
+    <form id="bookingForm" onsubmit="return showThanksMessage(event)">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
+
+      <label for="category">Select Category</label>
+      <select id="category" name="category" required>
+        <option value="">Choose...</option>
+        <option value="Dresses">Dresses</option>
+        <option value="Bags">Bags</option>
+        <option value="Heels">Heels</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Toys">Toys</option>
+      </select>
+
+      <label for="message">Special Notes</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us anything special..."></textarea>
+
+      <button type="submit">Book Now 💫</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="contact-info">
+      <p>📍 <strong>Address:</strong> Luvora Studio, Saket, New Delhi, India</p>
+      <p>📞 <strong>Phone:</strong> +91 98765 43210</p>
+      <p>📧 <strong>Email:</strong> contact@luvora.com</p>
+      <p>🌐 <strong>Website:</strong> www.luvora.in</p>
+    </div>
+    <p style="color:#aaa; margin-top:10px;">© 2025 Luvora. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function showThanksMessage(e) {
+      e.preventDefault();
+      alert("💖 Thank you for booking with Luvora! Our team will contact you soon.");
+      document.getElementById("bookingForm").reset();
+    }
+  </script>
+</body>
+</html>

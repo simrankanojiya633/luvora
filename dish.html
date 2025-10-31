@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luvora — Dresses</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Poppins',sans-serif;
+    background:#0d0d0d;
+    color:#f5f5f5;
+  }
+
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    background: rgba(10,10,10,0.6);
+    z-index: 999;
+  }
+  .navbar a {
+ font-family: 'Cinzel Decorative', cursive;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+font-size:20px;
+    font-weight: 600;
+  }
+  .navbar a:hover {
+ background: linear-gradient(90deg, #2c3e50, #4ca1af);
+
+padding:7px 10px;
+border-radius:6px;
+
+  }
+
+
+  /* Grid */
+  .product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+    padding:120px 60px 80px;
+  }
+
+  .product-card{
+    background:rgba(25,25,25,0.85);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.6);
+    transition:0.3s ease;
+  }
+  .product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.8);
+  }
+  .product-card img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+    opacity:0.95;
+    transition:0.3s;
+  }
+  .product-card:hover img{
+    opacity:1;
+  }
+  .product-info{
+    padding:20px;
+    text-align:center;
+  }
+  .product-info h4{
+    color:#fff;
+    margin-bottom:8px;
+    font-weight:500;
+  }
+  .price{
+    color:#ff5fa2;
+    font-weight:600;
+    margin-bottom:15px;
+  }
+
+  /* Buttons */
+  .btn{
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    font-size:0.9em;
+    letter-spacing:1px;
+    cursor:pointer;
+    transition:0.3s;
+    margin:5px;
+  }
+  .btn-cart{
+    background:transparent;
+    color:#ff5fa2;
+    border:1px solid #ff5fa2;
+  }
+  .btn-cart:hover{
+    background:#ff5fa2;
+    color:#fff;
+  }
+  .btn-buy{
+    background:linear-gradient(135deg,#ff4081,#c2185b);
+    color:#fff;
+  }
+  .btn-buy:hover{
+    background:linear-gradient(135deg,#ff5fa2,#d81b60);
+    transform:scale(1.05);
+  }
+
+  footer{
+    text-align:center;
+    background:#0b0b0b;
+    padding:40px 10px;
+    color:#999;
+    font-size:0.9em;
+    letter-spacing:1px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="shop.html">Shopping</a>
+   <a href="ABOUT.HTML">About</a>
+  <a href="CONTACT.HTML">Contact</a>
+<a href="cart.html">🛒 CART</a>
+
+</div>
+
+<!-- Product Grid -->
+<div class="product-grid">
+  <div class="product-card">
+    <img src="lh.JPG">
+    <div class="product-info">
+      <h4>special</h4>
+      <p class="price">₹3,999</p>
+       <button class="btn btn-cart"
+              data-name="special"
+              data-price="4799"
+              data-image="lh.JPG">Add to Cart</button>
+      <button class="btn btn-buy"
+              data-name="special"
+              data-price="4799"
+              data-image="lh.JPG">Buy Now</button>
+  </div>
+</div>
+
+  <div class="product-card">
+    <img src="oh.JPG">
+    <div class="product-info">
+     <h4>chessy</h4>
+      <p class="price">₹4,499</p>
+       <button class="btn btn-cart"
+              data-name="chessy"
+              data-price="4799"
+              data-image="jf.JPG">Add to Cart</button>
+      <button class="btn btn-buy"
+              data-name="chessy"
+              data-price="4799"
+              data-image="jf.JPG">Buy Now</button>
+    </div>
+  </div>
+
+ 
+  <div class="product-card">
+    <img src="jf.JPG">
+    <div class="product-info">
+      <h4>spicy</h4>
+      <p class="price">₹2,999</p>
+      <button class="btn btn-cart"
+              data-name="spicy"
+              data-price="4799"
+              data-image="jf.JPG">Add to Cart</button>
+      <button class="btn btn-buy"
+              data-name="spicy"
+              data-price="4799"
+              data-image="jf.JPG">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Duplicate similar cards to reach 20 -->
+  <div class="product-card">
+    <img src="hf.JPG">
+    <div class="product-info">
+      <h4>taste love</h4>
+      <p class="price">₹3,499</p>
+       <button class="btn btn-cart"
+              data-name="taste love"
+              data-price="4799"
+              data-image="hf.JPG">Add to Cart</button>
+      <button class="btn btn-buy"
+              data-name="taste love"
+              data-price="4799"
+              data-image="hf.JPG">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="gf.JPG">
+    <div class="product-info">
+      <h4>masala</h4>
+      <p class="price">₹5,299</p>
+       <button class="btn btn-cart"
+              data-name="masala"
+              data-price="4799"
+              data-image="gf.JPG">Add to Cart</button>
+      <button class="btn btn-buy"
+              data-name="masala"
+              data-price="4799"
+              data-image="gf.JPG">Buy Now</button>
+    </div>
+  </div>
+ </div>
+<footer>
+  <p>© 2025 Luvora | Dark. Dreamy. Divine.</p>
+</footer>
+<!-- SCRIPT: cart logic and cart count -->
+<script>
+  // load cart from localStorage or empty
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // update cart count badge in navbar
+  function updateCartCount() {
+    const countEl = document.getElementById('cart-count');
+    const totalItems = cart.reduce((sum, it) => sum + it.quantity, 0);
+    countEl.textContent = totalItems;
+  }
+
+  // Add to Cart buttons
+  document.querySelectorAll('.btn-cart').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const name = btn.dataset.name;
+      const price = Number(btn.dataset.price);
+      const image = btn.dataset.image;
+
+      if (!name || !price || !image) {
+        alert('Product data missing. Make sure data-name, data-price and data-image exist.');
+        return;
+      }
+
+      const existing = cart.find(i => i.name === name);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ name, price, image, quantity: 1 });
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+      alert(`${name} added to your cart!`);
+    });
+  });
+
+  // Buy Now buttons -> save single product and go to checkout
+  document.querySelectorAll('.btn-buy').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const product = {
+        name: btn.dataset.name,
+        price: Number(btn.dataset.price),
+        image: btn.dataset.image
+      };
+      if (!product.name || !product.price || !product.image) {
+        alert('Product data missing.');
+        return;
+      }
+      localStorage.setItem('checkout', JSON.stringify(product));
+      window.location.href = 'checkout.html';
+    });
+  });
+
+  // on page load, show current cart count
+  updateCartCount();
+</script>
+
+
+</body>
+</html>

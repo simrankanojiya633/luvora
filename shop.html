@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luvora | Shop the Dream</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+<style>
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    background: rgba(10,10,10,0.6);
+    z-index: 999;
+  }
+  .navbar a {
+ font-family: 'Cinzel Decorative', cursive;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+font-size:20px;
+    font-weight: 600;
+  }
+  .navbar a:hover {
+ background: linear-gradient(90deg, #2c3e50, #4ca1af);
+
+padding:7px 10px;
+border-radius:6px;
+
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0e0e;
+    color: #f5f5f5;
+    overflow-x: hidden;
+  }
+
+  
+  /* Section Titles */
+  section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  section h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff80ab, #ff4081);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+  }
+  .divider {
+    height: 2px;
+    width: 70px;
+    background: linear-gradient(90deg, #ff80ab, #ff4081);
+    margin: 20px auto 50px;
+    border-radius: 1px;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+    padding: 0 30px;
+  }
+  .product-card {
+width: 430px;
+height: 480px;
+    background: rgba(30,30,30,0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  }
+  .product-card img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+  .product-card:hover img {
+    opacity: 1;
+  }
+  .product-info {
+    padding: 10px 0;
+  }
+  .product-info h4 {
+font-family: 'Cinzel Decorative', cursive;
+font-size:25px;
+    margin-bottom: 2px;
+    color: #fff;
+  }
+  .price {
+font-size:22px;
+    color: #ff5fa2;
+    font-weight: bold;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #0b0b0b;
+    padding: 40px 10px;
+    color: #aaa;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+.product-link {
+font-family: 'Cinzel Decorative', cursive;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+font-size:25px;
+}
+
+.product-link:hover {
+  color: seagreen; /* your pink aesthetic color */
+}
+
+</style>
+</head>
+
+<body>
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="shop.html">Shopping</a>
+  <a href="ABOUT.HTML">About</a>
+  <a href="CONTACT.HTML">Contact</a>
+<a href="cart.html">🛒 CART</a>
+
+</div>
+
+
+<!-- WOMEN -->
+<section id="women">
+  <h2>Women</h2>
+  <div class="divider"></div>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="DRESS.jpg" alt="Dress">
+      <div class="product-info">
+        <a href="women-dress.html" class="product-link">YOUR DREAM FIT❤️</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="bag.jpg" alt="Bag">
+      <div class="product-info">
+        <a href="WOMEN-BAG.HTML" class="product-link">Carry Me Pretty</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="sandal.jpg" alt="Shoes">
+      <div class="product-info">
+         <a href="WOMEN-HEELS.HTML" class="product-link">walk of grace</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESSORIES -->
+<section id="accessories">
+  <h2>Accessories</h2>
+  <div class="divider"></div>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="F.JPG" alt="Jewelry">
+      <div class="product-info">
+        <a href="GRACE.HTML" class="product-link">GRACE OF WOMEN</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="MAKEUP.JPG" alt="Sunglasses">
+      <div class="product-info">
+        <a href="Makeup.HTML" class="product-link">Shades OF BEAUTY</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="BRAC.JPG" alt="Watch">
+      <div class="product-info">
+        <a href="bracletes.HTML" class="product-link">WOMEN AUTHENTIC</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEN -->
+<section id="men">
+  <h2>Men</h2>
+  <div class="divider"></div>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="men.jpg" alt="Jacket">
+      <div class="product-info">
+        <a href="MEN-DRESS.HTML" class="product-link">gentleman edit</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="watch.jpg" alt="Watch">
+      <div class="product-info">
+        <a href="COUPLE-WATCH.HTML" class="product-link">couples watch</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="shoes.jpg" alt="Sneakers">
+      <div class="product-info">
+        <a href="MEN-SHOES.HTML" class="product-link">bold Sneakers</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHILDREN -->
+<section id="children">
+  <h2>Children</h2>
+  <div class="divider"></div>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="DUO.JPG" alt="Kids Dress">
+      <div class="product-info">
+      <a href="child-combo.HTML" class="product-link">KIDORA CUDDLES</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="TEDDY.PNG" alt="Kids Shoes">
+      <div class="product-info">
+       <a href="teddy.HTML" class="product-link">CUDDLE CORNER</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="CUTE.JPG" alt="Kids Hoodie">
+      <div class="product-info">
+     <a href="toddles.HTML" class="product-link">TODDLES CUTIEEE</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section id="food">
+  <h2>Food</h2>
+  <div class="divider"></div>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="CAKE.JPG" alt="Cake">
+      <div class="product-info">
+        <a href="cake.HTML" class="product-link">Chocolate Bliss Cake</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="FOOD.JPG" alt="Pastry">
+      <div class="product-info">
+       <a href="dish.HTML" class="product-link">ITALIAN CORNER</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="DRINK.JPG" alt="Coffee">
+      <div class="product-info">
+      <a href="drink.HTML" class="product-link">CLASSIC DRINKS</a>
+        <p class="price"> STARTING FROM ONLY ₹1,999</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  <p>© 2025 Luvora | Shop the Dream ✦</p>
+</footer>
+
+</body>
+</html>

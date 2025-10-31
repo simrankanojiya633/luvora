@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Luvora</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* ----------- Luvora About Page ------------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar (reuse your main style if needed) */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    background: rgba(10,10,10,0.6);
+    z-index: 999;
+  }
+  .navbar a {
+ font-family: 'Cinzel Decorative', cursive;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+font-size:20px;
+    font-weight: 600;
+  }
+  .navbar a:hover {
+ background: linear-gradient(90deg, #2c3e50, #4ca1af);
+padding:7px 10px;
+border-radius:6px;
+
+  }
+
+
+/* Hero section with background video */
+.hero {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+}
+.hero video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 60PX;
+  color: #ff6fa3;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px #ff9ecb;
+}
+.hero-text p {
+  font-size: 28px;
+  color: #f8f5f7;
+  text-align: center;
+  font-family: "Poppins", cursive;
+  text-shadow: 0 0 4px #e4c6d8, 0 0 8px #e4c6d8;
+
+}
+
+/* About content */
+.about-section {
+  width: 85%;
+  margin: 80px auto;
+  text-align: center;
+}
+.about-section h2 {
+  color: #ff9ecb;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.about-section p {
+  color: #ddd;
+  line-height: 1.8;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+/* Cards aesthetic */
+.about-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(255,111,163,0.1);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255,111,163,0.3);
+}
+.card h3 {
+  color: #ff6fa3;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+/* Footer */
+.footer {
+  margin-top: 70px;
+  text-align: center;
+  padding: 30px;
+  color: #999;
+  font-size: 0.9em;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="shop.html">Shopping</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <a href="cart.html">🛒 CART</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="VI.MP4" type="video/mp4">
+  </video>
+  <div class="hero-text">
+    <h1>Welcome to Luvora</h1>
+    <p>where elegance meets emotion,every piece tells a story and your style feels like love in motion.🌸</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+  <h2>Our Story</h2>
+  <p>
+    Luvora was born from a simple dream — to bring beauty, confidence, and charm to every soul.
+    Our collections are inspired by timeless grace, soft aesthetics, and the power of love.
+    Every piece you find here carries a touch of dream, a sense of belonging, and a sparkle of you.
+  </p>
+
+  <div class="about-cards">
+    <div class="card">
+      <h3>🌷 Aesthetic Designs</h3>
+      <p>Each design reflects calmness, class, and your inner glow — made for hearts that love beauty.</p>
+    </div>
+    <div class="card">
+      <h3>💫 Timeless Quality</h3>
+      <p>We choose comfort and quality that lasts — because beauty should never fade away.</p>
+    </div>
+    <div class="card">
+      <h3>🩰 You, Our Muse</h3>
+      <p>Every collection begins with you — your dreams, your stories, your forever moments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+  © 2025 Luvora | Designed with 💖 by Simran
+</div>
+
+</body>
+</html>
